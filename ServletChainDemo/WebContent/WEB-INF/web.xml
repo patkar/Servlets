@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ServletChainDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>squareServlet</display-name>
+    <servlet-name>squareServlet</servlet-name>
+    <servlet-class>com.deloitte.squareServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>squareServlet</servlet-name>
+    <url-pattern>/squareServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>cubeServlet</display-name>
+    <servlet-name>cubeServlet</servlet-name>
+    <servlet-class>com.deloitte.cubeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cubeServlet</servlet-name>
+    <url-pattern>/cubeServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
